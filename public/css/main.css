@@ -1,0 +1,242 @@
+body {
+  background-color: #f1faee;
+  color: black;
+  font-family: 'Droid Sans', sans-serif; }
+
+button:hover {
+  cursor: pointer; }
+
+.btn:hover {
+  cursor: pointer; }
+
+a {
+  color: #00e676; }
+
+a:hover {
+  color: #00b35c;
+  cursor: pointer; }
+
+a:focus {
+  color: #00cd69;
+  cursor: pointer; }
+
+hr {
+  background-color: #6d82ac; }
+
+.darkBlueBody {
+  background-color: #1C2331;
+  color: #f2f2f2; }
+
+.blueBody {
+  background-color: #27447C;
+  color: #f2f2f2; }
+
+.whiteBody {
+  background-color: #f1faee;
+  color: #1C2331; }
+
+.orangeBody {
+  background-color: #F28500;
+  color: #f2f2f2; }
+
+.dangerBody {
+  background-color: #e53935;
+  color: #f2f2f2; }
+
+.whiteText {
+  color: #f2f2f2; }
+
+.subHeader {
+  margin-top: 20px;
+  margin-bottom: 15px; }
+
+.contactDiv {
+  padding: 3px 5px 3px 5px;
+  font-size: 22px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  border: 0px solid black; }
+
+.inlineBlock {
+  display: inline-block; }
+
+.horizontalCenter {
+  margin-right: auto;
+  margin-left: auto; }
+
+.pageSection {
+  margin-bottom: 30px; }
+
+.footer {
+  padding-top: 30px;
+  padding-bottom: 20px; }
+
+.footerA {
+  color: #f2f2f2;
+  margin-left: 20px;
+  margin-right: 20px; }
+
+.footerA:hover {
+  color: #a6a6a6;
+  text-decoration: none; }
+
+.footerA:focus {
+  color: #bfbfbf;
+  box-shadow: none; }
+
+.homeSection {
+  padding-top: 70px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/guymontowing2.jpg") no-repeat center;
+  background-size: cover; }
+  @media all and (min-width: 0px) and (max-width: 480px) {
+    .homeSection {
+      padding-top: 40px; } }
+
+.homeHeaderSection {
+  padding-bottom: 230px;
+  color: white; }
+  @media all and (min-width: 0px) and (max-width: 480px) {
+    .homeHeaderSection {
+      padding-bottom: 90px; } }
+
+.homeContent {
+  border-top: 2px solid #1C2331; }
+
+.bigHeader {
+  font-size: 70px; }
+  @media all and (min-width: 0px) and (max-width: 480px) {
+    .bigHeader {
+      font-size: 50px; } }
+
+@media all and (min-width: 0px) and (max-width: 480px) {
+  h1 {
+    font-size: 30px; } }
+
+.servicesList {
+  font-size: 20px;
+  font-weight: bold; }
+
+.aboutBlock {
+  padding: 15px;
+  margin-bottom: 20px;
+  margin-right: 20px; }
+
+.aboutContentBody {
+  padding-top: 40px;
+  padding-bottom: 50px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/guymontowing3.jpg") no-repeat center;
+  background-size: cover; }
+
+.servicesContentBody {
+  padding-top: 40px;
+  padding-bottom: 50px;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/images/guymontowing4.jpg") no-repeat center;
+  background-size: cover; }
+
+.servicesBlock {
+  background-color: #27447C;
+  color: #f2f2f2;
+  padding: 15px;
+  margin-bottom: 10px;
+  margin-right: 20px; }
+
+.contactContentBody {
+  padding-top: 100px;
+  padding-bottom: 50px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/guymontowing5.jpg") no-repeat center;
+  background-size: cover; }
+
+.contact form {
+  background-color: #f2f2f2;
+  color: #1C2331;
+  padding: 20px; }
+
+.contact input {
+  width: 100%;
+  margin-top: 4px;
+  border: 1px solid #a6a6a6; }
+
+.contact textarea {
+  width: 100%;
+  margin-top: 4px;
+  border: 1px solid #a6a6a6;
+  min-height: 180px; }
+
+.contactOffset {
+  margin-bottom: 250px; }
+
+.navbar-wrapper {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100% !important;
+  left: 0;
+  z-index: 20; }
+
+.navbar-wrapper > .container {
+  padding-right: 0;
+  padding-left: 0;
+  width: inherit; }
+
+.navbar {
+  background-color: #1C2331;
+  color: white;
+  padding-bottom: 14px; }
+
+.navbar-collapse {
+  margin-top: 11px; }
+
+.navbar a {
+  color: #f2f2f2; }
+
+.navbar a:hover {
+  color: #b2b2b2; }
+
+.navbar a:focus {
+  color: #d9d9d9; }
+
+ul .nav-item {
+  transition: 0.5;
+  color: #f2f2f2;
+  font-weight: bold;
+  padding-left: 10px;
+  padding-right: 10px; }
+
+ul .nav-item:hover {
+  color: #1C2331;
+  background-color: #e5e5e5; }
+
+ul .nav-link:hover {
+  color: #1C2331; }
+
+.navBtn {
+  display: inline-block;
+  background-color: transparent;
+  font-size: 18px;
+  height: 100%;
+  border: 0px solid black;
+  padding: 20px 25px 20px 25px;
+  margin: 0px;
+  color: #f1faee; }
+
+.navBtn:hover {
+  transition: 0.45s;
+  background-color: #f1faee;
+  color: #1C2331;
+  text-decoration: none; }
+
+.navBtn:focus {
+  background-color: #f1faee;
+  color: #1C2331;
+  text-decoration: none; }
+
+.navbar-toggler {
+  color: #f2f2f2;
+  background-color: #27447C; }
+
+.navPlaceholder {
+  margin-bottom: 30px; }
+
+.darkBlueRow {
+  background-color: #1C2331;
+  color: #f1faee; }

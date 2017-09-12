@@ -1,0 +1,258 @@
+$body-bg: #f2f2f2
+$red: #E63946
+$lightGray: #f1faee
+$blue: #27447C
+$white: #f2f2f2
+$darkBlue: #1C2331
+$orange: #F28500
+
+//Generic styles----------------------------------------------
+//Generic
+body
+  background-color: $lightGray
+  color: black
+  font-family: 'Droid Sans', sans-serif
+
+button:hover
+  cursor: pointer
+
+.btn:hover
+  cursor: pointer
+
+a
+  color: #00e676
+
+a:hover
+  color: darken(#00e676, 10%)
+  cursor: pointer
+
+a:focus
+  color: darken(#00e676, 5%)
+  cursor: pointer
+
+hr
+  background-color: lighten($darkBlue, 40%)
+
+//Color sets-------------------
+.darkBlueBody
+  background-color: $darkBlue
+  color: $white
+
+.blueBody
+  background-color: $blue
+  color: $white
+
+.whiteBody
+  background-color: $lightGray
+  color: $darkBlue
+
+.orangeBody
+  background-color: $orange
+  color: $white
+
+.dangerBody
+  background-color: #e53935
+  color: $white
+
+.whiteText
+  color: $white
+//end color sets
+
+//general "helper classes"-------
+.subHeader
+  margin-top: 20px
+  margin-bottom: 15px
+
+.contactDiv
+  padding: 3px 5px 3px 5px
+  font-size: 22px
+  margin-bottom: 10px
+  margin-top: 10px
+  border: 0px solid black
+
+.inlineBlock
+  display: inline-block
+
+.horizontalCenter
+  margin-right: auto
+  margin-left: auto
+
+.pageSection
+  margin-bottom: 30px
+
+//Reused sections--------------------------------------------------------
+.footer
+  padding-top: 30px
+  padding-bottom: 20px
+
+.footerA
+  color: $white
+  margin-left: 20px
+  margin-right: 20px
+
+.footerA:hover
+  color: darken($white, 30%)
+  text-decoration: none
+
+.footerA:focus
+  color: darken($white, 20%)
+  box-shadow: none
+
+//Home page Note: LOWER FONT SIZE FOR MOBILE. IT'S HUGE (for mobile)!!
+.homeSection
+  padding-top: 70px
+  background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('/images/guymontowing2.jpg') no-repeat center
+  background-size: cover
+  @media all and (min-width: 0px) and (max-width: 480px)
+    padding-top: 40px
+
+.homeHeaderSection
+  padding-bottom: 230px
+  color: white
+  @media all and (min-width: 0px) and (max-width: 480px)
+    padding-bottom: 90px
+
+.homeContent
+  border-top: 2px solid $darkBlue
+
+.bigHeader
+  font-size: 70px
+  @media all and (min-width: 0px) and (max-width: 480px)
+    font-size: 50px
+
+h1
+  @media all and (min-width: 0px) and (max-width: 480px)
+    font-size: 30px
+
+.servicesList
+  font-size: 20px
+  font-weight: bold
+//About page-------------------------------------------------
+.aboutBlock
+  padding: 15px
+  margin-bottom: 20px
+  margin-right: 20px
+
+.aboutContentBody
+  padding-top: 40px
+  padding-bottom: 50px
+  background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('/images/guymontowing3.jpg') no-repeat center
+  background-size: cover
+
+//Services Page-----------------------------------------------------
+.servicesContentBody
+  padding-top: 40px
+  padding-bottom: 50px
+  background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url('/images/guymontowing4.jpg') no-repeat center
+  background-size: cover
+
+.servicesBlock
+  background-color: $blue
+  color: $white
+  padding: 15px
+  margin-bottom: 10px
+  margin-right: 20px
+
+//Contact Page-----------------------------------------------
+.contactContentBody
+    padding-top: 100px
+    padding-bottom: 50px
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('/images/guymontowing5.jpg') no-repeat center
+    background-size: cover
+
+.contact form
+  background-color: $white
+  color: $darkBlue
+  padding: 20px
+
+.contact input
+  width: 100%
+  margin-top: 4px
+  border: 1px solid darken($white, 30%)
+
+.contact textarea
+  width: 100%
+  margin-top: 4px
+  border: 1px solid darken($white, 30%)
+  min-height: 180px
+
+.contactOffset
+  margin-bottom: 250px
+
+//Navigation styles-------------------------------------------
+.navbar-wrapper
+  position: fixed
+  top: 0
+  right: 0
+  width: 100% !important
+  left: 0
+  z-index: 20
+
+.navbar-wrapper > .container
+  padding-right: 0
+  padding-left: 0
+  width: inherit
+
+.navbar
+  background-color: $darkBlue
+  color: white
+  padding-bottom: 14px
+
+.navbar-collapse
+  margin-top: 11px
+
+.navbar a
+  color: $white
+
+.navbar a:hover
+  color: darken($white, 25%)
+
+.navbar a:focus
+  color: darken($white, 10%)
+
+ul .nav-item
+  transition: 0.5
+  color: $white
+  font-weight: bold
+  padding-left: 10px
+  padding-right: 10px
+
+ul .nav-item:hover
+  color: $darkBlue
+  background-color: darken($white, 5%)
+
+ul .nav-link:hover
+  color: $darkBlue
+
+.navBtn
+  display: inline-block
+  background-color: transparent
+  font-size: 18px
+  height: 100%
+  border: 0px solid black
+  padding: 20px 25px 20px 25px
+  margin: 0px
+  color: $lightGray
+
+.navBtn:hover
+  transition: 0.45s
+  background-color: $lightGray
+  color: $darkBlue
+  text-decoration: none
+
+.navBtn:focus
+  background-color: $lightGray
+  color: $darkBlue
+  text-decoration: none
+
+.navbar-toggler
+  color: $white
+  background-color: $blue
+
+.navPlaceholder
+  margin-bottom: 30px
+
+//Other
+.darkBlueRow
+  background-color: $darkBlue
+  color: $lightGray
