@@ -33,6 +33,12 @@ a:focus
 hr
   background-color: lighten($darkBlue, 40%)
 
+ul
+  columns: 2
+  -webkit-columns: 2
+  -moz-columns: 2
+  list-style-position: inside
+
 //Color sets-------------------
 .darkBlueBody
   background-color: $darkBlue
@@ -42,12 +48,16 @@ hr
   background-color: $blue
   color: $white
 
+.transparentBlue
+  background-color: transparentize($blue, 0.35)
+  color: $white
+
 .whiteBody
   background-color: $lightGray
   color: $darkBlue
 
-.orangeBody
-  background-color: $orange
+.transparentOrange
+  background-color: transparentize($orange, 0.35)
   color: $white
 
 .dangerBody
@@ -127,6 +137,12 @@ h1
 .servicesList
   font-size: 20px
   font-weight: bold
+  margin-left: auto
+  margin-right: auto
+  @media all and (min-width: 0px) and (max-width: 480px)
+    columns: 1
+
+
 //About page-------------------------------------------------
 .aboutBlock
   padding: 15px
@@ -147,7 +163,7 @@ h1
   background-size: cover
 
 .servicesBlock
-  background-color: $blue
+  background-color: transparentize($blue, 0.2)
   color: $white
   padding: 15px
   margin-bottom: 10px

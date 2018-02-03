@@ -23,6 +23,12 @@ a:focus {
 hr {
   background-color: #6d82ac; }
 
+ul {
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+  list-style-position: inside; }
+
 .darkBlueBody {
   background-color: #1C2331;
   color: #f2f2f2; }
@@ -31,12 +37,16 @@ hr {
   background-color: #27447C;
   color: #f2f2f2; }
 
+.transparentBlue {
+  background-color: rgba(39, 68, 124, 0.65);
+  color: #f2f2f2; }
+
 .whiteBody {
   background-color: #f1faee;
   color: #1C2331; }
 
-.orangeBody {
-  background-color: #F28500;
+.transparentOrange {
+  background-color: rgba(242, 133, 0, 0.65);
   color: #f2f2f2; }
 
 .dangerBody {
@@ -114,7 +124,12 @@ hr {
 
 .servicesList {
   font-size: 20px;
-  font-weight: bold; }
+  font-weight: bold;
+  margin-left: auto;
+  margin-right: auto; }
+  @media all and (min-width: 0px) and (max-width: 480px) {
+    .servicesList {
+      columns: 1; } }
 
 .aboutBlock {
   padding: 15px;
@@ -134,7 +149,7 @@ hr {
   background-size: cover; }
 
 .servicesBlock {
-  background-color: #27447C;
+  background-color: rgba(39, 68, 124, 0.8);
   color: #f2f2f2;
   padding: 15px;
   margin-bottom: 10px;
